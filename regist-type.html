@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+<title>注册身份选择</title>
+<link href="css/weui.min.css" rel="stylesheet" type="text/css">
+<link href="css/example.css" rel="stylesheet" type="text/css">
+<link href="css/prepare.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div class="tabbar">
+        <div class="weui_tab" id="main">
+            <div class="choose">
+            	<table width="100%" align="center" border="0">
+                	<tr>
+                    	<td width="50%" height="200" align="center" valign="middle">
+                        	<img src="img/doctor.jpg" class="circle active" onClick="select(0)" id="boy"/>
+                        </td>
+                        <td width="50%" height="200" align="center" valign="middle">
+                        	<img src="img/pregnant.jpg" class="circle" onClick="select(1)" id="girl"/>
+                        </td>
+                    </tr>
+                    <tr>
+                    	<td height="30" align="center" valign="middle" class="boy">
+                        	医生
+                        </td>
+                        <td height="30" align="center" valign="middle" class="girl">
+                        	孕妇
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+	<div class="info">
+    	请选择准确的身份~
+    </div>
+</body>
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script>
+	function select(type)
+	{
+		if(type == 0)
+		{
+			if($("#girl").hasClass("active"))
+			{
+				$("#girl").removeClass("active");
+			}
+			$("#boy").addClass("active");
+		}
+		if(type == 1)
+		{
+			if($("#boy").hasClass("active"))
+			{
+				$("#boy").removeClass("active");
+			}
+			$("#girl").addClass("active");		
+		}
+	}
+</script>
+
+</html>
+
+
+
+
+
+
+
+
+
+
