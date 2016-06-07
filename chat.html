@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+<title>与XXX的聊天</title>
+<link href="css/weui.min.css" rel="stylesheet" type="text/css">
+<link href="css/index.css" rel="stylesheet" type="text/css">
+<link href="css/example.css" rel="stylesheet" type="text/css">
+<link href="css/swipe.css" rel="stylesheet" type="text/css">
+<style>
+.text{flex:4; -webkit-box-flex:4; -ms-flex:4; -webkit-flex:4;}
+textarea{width:95%; font-size:16px; resize:none; line-height:18px; height:50px;}
+.mylist{width:100%; padding:10px; margin:0; list-style:none;}
+.mylist li{max-width:95%; height:auto; display:block; margin:0; padding:0; overflow:auto; margin-bottom:16px; text-align:center; color:#999; font-size:12px;}
+.left{float:left; display:block;}
+.right{float:right; display:block;}
+.ml-10{margin-left:10px;}
+.mr-10{margin-right:10px;}
+.mylist li span{height:auto; max-width:75%; overflow-x:hidden; padding:7px; border-radius:8px; margin-top:5px; color:#000; font-size:16px;}
+.mylist li span.left{background:#ffffff;}
+.mylist li span.right{background:#04BE02;}
+.mylist li img{width:50px; height:50px; border-radius:999px; -webkit-border-radius:999px; -ms-border-radius:999px;}
+</style>
+</head>
+<body style="background:#f2f2f2;">
+    <div class="tabbar">
+        <div class="weui_tab">
+            <div class="weui_tab_bd">
+            	<ul class="mylist">
+                	<li>2015-05-01 14:00</li>
+                	<li>
+                    	<img  src="img/title.jpg" class="left mr-10"/>
+                        <span class="left">
+                        	我是聊天你的文字内容我是聊天你的文字内容
+                            我是聊天你的文字内容我是聊天你的文字内容
+                        </span>
+                    </li>
+                    <li>
+                    	<img  src="img/title.jpg" class="right ml-10"/>
+                        <span class="right">我是聊天你的文字内容</span>
+                    </li>
+                    <li>
+                    	<img  src="img/title.jpg" class="left mr-10"/>
+                        <span class="left">
+                        	我是聊天你的文字内容我是聊天你的文字内容
+                            我是聊天你的文字内容我是聊天你的文字内容
+                        </span>
+                    </li>
+                    <li>
+                    	<img  src="img/title.jpg" class="right ml-10"/>
+                        <span class="right">我是聊天你的文字内容</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="weui_tabbar">
+                <div class="weui_tabbar_item" style="padding:7px 0;">
+                	<div class="weui_tabbar_icon" style="height:50px; width:50px;">
+                    <img src="img/title.jpg"/>
+                    </div>
+                </div>
+                <div class="weui_tabbar_item text">
+                	<textarea type="text" placeholder="输入内容以发送"></textarea>
+                </div>
+                <div class="weui_tabbar_item" style="padding:7px 5px 7px 0;">
+                	<input type="button" class="weui_btn weui_btn_plain_primary" value="发送" style="height:50px;"/>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script src="js/swipe.js" type="text/javascript"></script>
+<script src="js/functions.js" type="text/javascript"></script>
+<script></script>
+<script>
+	$().ready(function(e) {
+        initSlide();
+    });
+	
+</script>    
+    
+</body>
+</html>
